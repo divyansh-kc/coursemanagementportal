@@ -1,0 +1,42 @@
+body{
+margin-top: 0px;
+background-color: #c2d6d6;
+
+}
+
+.header{
+background-color:  #660033;
+    color: #ffffff;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 90px;
+
+}
+
+.header h1 {
+  position: relative;
+  top: 5px;
+  left: 30px;
+}
+
+.header h2 {
+  position: relative;
+  top: 0px;
+  left: 30px;
+}
+
+.welcome{
+
+	text-align: center;
+	}
+.form form{
+margin: auto;
+width: 30%;
+}
+.form form submit{
+text-align: center;
+}
+

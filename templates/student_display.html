@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+<head>
+<title>Course Details</title>
+<link rel="stylesheet" type="text/css" href={% static "/css/main.css" %}>
+
+</head>
+<body>
+<div class="header">
+<img src="{% static "images/bhu.png" %}"
+alt="Picture of bhu"/>
+<h1>Faculty Of Performing Arts</h1>
+<h2>Banaras Hindu University</h2>
+</div>
+<p>Course Details:</p><br><br>
+<table>
+{% for i in table %}
+	<tr>
+	{% for j in i %}
+		<th>{{j}}</th>
+
+	
+	{% endfor %}
+	</tr>
+{% endfor %}
+
+</table>
+<br><br>
+</body>
+</html>

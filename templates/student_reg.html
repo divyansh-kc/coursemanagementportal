@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+<head>
+<title>Student Registration</title>
+<link rel="stylesheet" type="text/css" href={% static "/css/main.css" %}>
+
+</head>
+<body>
+<div class="header">
+<img src="{% static "images/bhu.png" %}"
+alt="Picture of bhu"/>
+<h1>Faculty Of Performing Arts</h1>
+<h2>Banaras Hindu University</h2>
+</div>
+<p>Student Registration</p>
+
+<form action='' method='post'>{% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='Submit' />
+
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+<head>
+<title>Instructor Home</title>
+<link rel="stylesheet" type="text/css" href={% static "/css/main.css" %}>
+
+</head>
+<body>
+<div class="header">
+<img src="{% static "images/bhu.png" %}"
+alt="Picture of bhu"/>
+<h1>Faculty Of Performing Arts</h1>
+<h2>Banaras Hindu University</h2>
+</div>	 
+<p>Welcome {{name}}</p><br><br>
+
+<p>Instructed Courses:</p><br>
+<table>
+{% for i in table %}
+	<tr>
+	{% for j in i %}
+		<th>{{j}}</th>
+
+	
+	{% endfor %}
+	</tr>
+{% endfor %}
+
+</table>
+<br><br>
+<a href = "/attendance">Update Attendance</a><br><br>
+<a href = "/grade">Update Grades</a><br><br>
+<a href = "/view_feedback">View Feedback</a><br><br>
+<a href = "/logged_out">Log Out</a><br><br>
+</body>
+</html>
